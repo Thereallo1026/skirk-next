@@ -36,7 +36,7 @@ export default function DripContent() {
 				>
 					<h1 className="text-4xl font-bold text-sky-400 mb-2">Void Star</h1>
 					<p className="text-xl text-white/70 italic">
-						Sinner's Pupil, Fool's Master
+						Sinner&apos;s Pupil, Fool&apos;s Master
 					</p>
 				</motion.div>
 
@@ -97,18 +97,19 @@ export default function DripContent() {
 						<div className="absolute inset-0 bg-black/30 backdrop-blur-sm rounded-md -z-10" />
 						<blockquote className="text-neutral-300 italic leading-relaxed">
 							<p className="mb-2">
-								"Sin infests the firmament, calamity unfurls across the
+								&quot;Sin infests the firmament, calamity unfurls across the
 								universe. You are free, and none now may proscribe you — yet
 								your destiny remains bound to that of this world. Indeed, you
-								shall send your disciple here in the near future."
+								shall send your disciple here in the near future.&quot;
 							</p>
 							<footer className="mt-2 text-sm text-neutral-400 text-right">
-								— Vedrfolnir "The Visionary" & Surtalogi "The Foul"
+								— Vedrfolnir &quot;The Visionary&quot; & Surtalogi &quot;The
+								Foul&quot;
 							</footer>
 						</blockquote>
 						<p className="mt-4 text-neutral-300 italic leading-relaxed">
-							"What? Me, a student? Such misfortune — for them, I mean...
-							whenever they show up."
+							&quot;What? Me, a student? Such misfortune — for them, I mean...
+							whenever they show up.&quot;
 						</p>
 					</div>
 				</motion.div>
