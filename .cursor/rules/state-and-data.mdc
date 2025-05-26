@@ -1,0 +1,51 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# State Management and Data Fetching
+
+## State Management
+
+- Use React hooks for local state management
+- Prefer `useState` for simple state
+- Use `useReducer` for complex state logic
+- Implement context sparingly and only when state needs to be shared across multiple components
+
+## Data Fetching
+
+- Use Next.js App Router data fetching patterns
+- Implement proper loading and error states
+- Cache responses when appropriate
+- Handle edge cases and errors gracefully
+
+Example pattern:
+
+```tsx
+async function getData() {
+  const res = await fetch('...', { next: { revalidate: 3600 } })
+  if (!res.ok) throw new Error('Failed to fetch data')
+  return res.json()
+}
+
+export default async function Page() {
+  const data = await getData()
+  return (
+    // Render data
+  )
+}
+```
+
+## Error Handling
+
+- Use error boundaries for client-side errors
+- Implement proper error states in async operations
+- Provide meaningful error messages to users
+- Log errors appropriately for debugging
+
+## Loading States
+
+- Use Suspense boundaries
+- Implement skeleton loading states
+- Show loading indicators for async operations
+- Maintain layout stability during loading

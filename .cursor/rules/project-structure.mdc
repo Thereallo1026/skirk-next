@@ -1,0 +1,33 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Project Structure Guide
+
+This is a Next.js 15+ project with TypeScript and Tailwind CSS. The project uses Bun as the package manager.
+
+## Key Directories and Files
+
+- [app/](mdc:app) - Contains the Next.js app router pages and layouts
+- [components/](mdc:components) - React components using functional style with TypeScript
+- [lib/](mdc:lib) - Utility functions and shared logic
+- [public/](mdc:public) - Static assets
+- [tailwind.config.ts](mdc:tailwind.config.ts) - Tailwind CSS configuration
+- [next.config.ts](mdc:next.config.ts) - Next.js configuration
+
+## Development Guidelines
+
+1. Use functional React components with TypeScript
+2. Follow mobile-first approach with Tailwind CSS
+3. Use Motion (Framer Motion) for animations: `import { motion } from "motion/react"`
+4. Use Bun for package management (bun.lock present)
+5. Use Tailwind's built-in animation classes when possible
+6. Implement hover transitions for interactive elements
+
+## Component Standards
+
+- All components should be TypeScript files (.tsx)
+- Use proper type definitions for props
+- Implement responsive design using Tailwind breakpoints
+- Use Lucide React for icons when custom icons aren't required

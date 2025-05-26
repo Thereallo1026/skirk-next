@@ -11,13 +11,13 @@ export default function TimerPage() {
 	const [activeTab, setActiveTab] = useState<"release" | "drip">("release");
 
 	return (
-		<div className="flex flex-col items-center justify-center min-h-screen bg-black text-white p-4">
+		<div className="flex flex-col items-center justify-center min-h-screen bg-black text-white">
 			<VideoBackground />
 			<main className="flex flex-col items-center gap-12 flex-grow justify-center z-10">
 				<div className="relative flex place-items-center">
 					<div className="w-full max-w-5xl">
 						{/* Tabs */}
-						<div className="grid w-full grid-cols-[1fr_auto_1fr] items-center rounded-md p-1 max-w-[220px] sm:max-w-[280px] mx-auto">
+						<div className="grid w-full grid-cols-[1fr_auto_1fr] items-center rounded-md p-1 max-w-[220px] sm:max-w-[280px] mx-auto pt-8 pb-4">
 							<button
 								type="button"
 								onClick={() => setActiveTab("release")}
@@ -45,12 +45,12 @@ export default function TimerPage() {
 							</button>
 						</div>
 						{activeTab === "release" && (
-							<div className="mt-12">
+							<div className="mt-4 md:mt-8">
 								<ReleaseTimer />
 							</div>
 						)}
 						{activeTab === "drip" && (
-							<div className="mt-12">
+							<div className="mt-4 md:mt-8">
 								<DripContent />
 							</div>
 						)}

@@ -1,0 +1,52 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Coding Style and Conventions
+
+## TypeScript Guidelines
+
+- Use strict TypeScript mode
+- Prefer explicit type annotations for function parameters and returns
+- Use interface for object types that can be implemented or extended
+- Use type for unions, intersections, and mapped types
+
+## React Component Structure
+
+```tsx
+import { type FC } from 'react'
+import { motion } from 'motion/react'
+
+interface ComponentProps {
+  // Props definition
+}
+
+export const Component: FC<ComponentProps> = ({ props }) => {
+  // Component logic
+  return (
+    // JSX
+  )
+}
+```
+
+## Tailwind CSS Conventions
+
+- Use consistent spacing scales
+- Mobile-first responsive design:
+  ```tsx
+  className="p-4 md:p-6 lg:p-8"
+  ```
+- Implement hover transitions:
+  ```tsx
+  className="transition-all duration-200 hover:scale-105"
+  ```
+
+## Import Order
+
+1. React and Next.js imports
+2. Third-party libraries
+3. Local components
+4. Types and interfaces
+5. Utils and helpers
+6. Styles (if any)
