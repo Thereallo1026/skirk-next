@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 	openGraph: {
 		title: "Skirk Countdown | Genshin Impact Countdown",
 		type: "website",
-		url: "https://skirk.live",
+		url: "https://skirk.thereallo.dev",
 		images: "/meta-image.png",
 		description:
 			'Yet, his "Foul Legacy" was not originally his. Rather, it was taught to him by that solitary girl who dwelt in the darkest corners of the universe.',
